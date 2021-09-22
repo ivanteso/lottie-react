@@ -33,6 +33,7 @@ describe("<Lottie />", () => {
     expect(lottieRef.current?.stop).toBeDefined();
     expect(lottieRef.current?.pause).toBeDefined();
     expect(lottieRef.current?.setSpeed).toBeDefined();
+    expect(lottieRef.current?.setQuality).toBeDefined();
     expect(lottieRef.current?.goToAndPlay).toBeDefined();
     expect(lottieRef.current?.goToAndStop).toBeDefined();
     expect(lottieRef.current?.setDirection).toBeDefined();

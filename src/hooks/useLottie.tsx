@@ -91,6 +91,14 @@ const useLottie = (
   };
 
   /**
+   * Set animation quality
+   * @param quality
+   */
+  const setQuality = (quality: number | string): void => {
+    animationInstanceRef.current?.setQuality(quality);
+  };
+
+  /**
    * Got to frame and play
    * @param value
    * @param isFrame
@@ -328,6 +336,7 @@ const useLottie = (
     stop,
     pause,
     setSpeed,
+    setQuality,
     goToAndStop,
     goToAndPlay,
     setDirection,

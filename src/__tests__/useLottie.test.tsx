@@ -57,6 +57,7 @@ describe("useLottie(...)", () => {
       expect(result.current.stop).toBeDefined();
       expect(result.current.pause).toBeDefined();
       expect(result.current.setSpeed).toBeDefined();
+      expect(result.current.setQuality).toBeDefined();
       expect(result.current.goToAndStop).toBeDefined();
       expect(result.current.goToAndPlay).toBeDefined();
       expect(result.current.setDirection).toBeDefined();
@@ -77,6 +78,7 @@ describe("useLottie(...)", () => {
       expect(result.current.stop()).toBeUndefined();
       expect(result.current.pause()).toBeUndefined();
       expect(result.current.setSpeed(1)).toBeUndefined();
+      expect(result.current.setQuality(1)).toBeUndefined();
       expect(result.current.goToAndStop(1)).toBeUndefined();
       expect(result.current.goToAndPlay(1)).toBeUndefined();
       expect(result.current.setDirection(1)).toBeUndefined();
@@ -108,6 +110,7 @@ describe("useLottie(...)", () => {
       expect(hook.result.current.stop()).toBeUndefined();
       expect(hook.result.current.pause()).toBeUndefined();
       expect(hook.result.current.setSpeed(1)).toBeUndefined();
+      expect(hook.result.current.setQuality(1)).toBeUndefined();
       expect(hook.result.current.goToAndStop(1)).toBeUndefined();
       expect(hook.result.current.goToAndPlay(1)).toBeUndefined();
       expect(hook.result.current.setDirection(1)).toBeUndefined();

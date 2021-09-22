@@ -18,6 +18,7 @@ export type LottieRefCurrentProps = {
   stop: () => void;
   pause: () => void;
   setSpeed: (speed: number) => void;
+  setQuality: (quality: number | string) => void;
   goToAndStop: (value: number, isFrame?: boolean) => void;
   goToAndPlay: (value: number, isFrame?: boolean) => void;
   setDirection: (direction: AnimationDirection) => void;
